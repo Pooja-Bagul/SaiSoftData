@@ -1,0 +1,5 @@
+Client / machine key
+b88ac25a-3e0f-494b-a41a-dcb67681afc7
+
+client secret
+mzmZVjQeqQU6zuaD

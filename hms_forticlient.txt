@@ -1,0 +1,33 @@
+FortiClient VPN
+VPN: IPsec VPN
+Connection Name: hms
+Description: hmsag
+Remote Gateway : gphravpn.fortidyndns.com
+Authentication Method: Pre-shared key : yoQ96Qu8sY1>]'wLN9i
+Username: kishor-sg
+Password: kishorsg@89200!
+
+
+HOST IP Address
+
+username
+
+password
+
+10.10.11.136 (Server & SQL DB)
+
+gph\rpiadmin
+
+Rp!4545000
+
+10.10.11.137 (PC)
+
+gph\rpiadmin
+
+Rp!4545000
+
+SQL INSTANCE(10.10.11.136)
+
+RPISQLSERVER\sa
+
+Rp!4545000

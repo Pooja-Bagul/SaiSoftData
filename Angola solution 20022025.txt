@@ -1,0 +1,43 @@
+18/02/2025
+Angola Queries:
+
+Queries:
+
+1. if COT file is having multiple pages more than 2 or 3pages. (once only we are opening the ERP for multiple files)
+2. End user have to choose best COT
+3.*Invoice generation monthly (2nd part, we did not discuss priorly)
+4.*As of now we do not have any validation on item price. (suggestion is to do separately; for 1 COT- 2payment invoice)
+end user need notification if we any intervention is required. 
+5.Put COT file as it is, no need to change filename.
+
+
+Solutions:
+
+1. We have tested- It is working
+(from 2-3 pages of pdf files we are getting multiple table and 2-3 JSON output file python code is working.)
+
+2. As of now there is no intervention required in current process, if future required we will give email notification; pop input method.
+
+3. This is completely new process, need to take systematic process walk through and have to do feasibility test, SDD and PDD and then we will decide with do respect with Kishor
+
+4. 1 PO- 2 Invoice
+   option 1. we have decided to read from email first then will make payment invoice. (optional)
+   option 2. Invoice file must be having PO number of any unique number based on that into ERP application we will search for same PO and edit the PO and regenerate the PO from ERP
+GR is important component for PO closing.
+
+5. No need to rename COT file. Done.
+
+6. Exchange rate- COT 19/2/2025- item-5rs
+		  COT 20/2/2025- item-6rs/4rs	
+so we decided, whatever items are there in COT file we will proceed to PO generation.
+
+
+7. GR Process.
+new Process called GR process. and we will match GR data with PO data, if it is not matching the data we will re-generate the PO.
+
+
+1. tomorrow meeting for PO closing 1:30 IST
+2. they will use process
+3. we need to share KT and test cases
+4. on Friday we will discuss process feedback
+5. Item price check using from National bank of Angola portal

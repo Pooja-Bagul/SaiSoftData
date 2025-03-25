@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Script xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <Commands>
+    <ScriptAction>
+      <ScriptCommand xsi:type="DatabaseDefineConnectionCommand" CommandID="f9261b48-a1cb-45ff-8161-4f23e95673b4" CommandName="DatabaseDefineConnectionCommand" IsCommented="false" SelectionName="Define Database Connection" DefaultPause="0" LineNumber="1" PauseBeforeExeucution="false" CommandEnabled="true" v_InstanceName="RPADB" v_ConnectionString="Provider=SQLOLEDB.1;Integrated Security=SSPI;Persist Security Info=False;Initial Catalog=sqldemo;Data Source=Neo" v_TestConnection="" />
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="DatabaseExecuteQueryCommand" CommandID="977a641b-64c0-4040-9a1b-ae40cc0ca98f" CommandName="DatabaseExecuteQueryCommand" IsCommented="false" SelectionName="Execute Database Query" DefaultPause="0" LineNumber="2" PauseBeforeExeucution="false" v_Comment="create table neobots(sample varchar(50))" CommandEnabled="true" v_InstanceName="RPADB" v_QueryType="Return Dataset" v_Query="" v_DatasetName="vdata">
+        <v_QueryParameters>
+          <xs:schema id="NewDataSet" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+            <xs:element name="QueryParamTable100124.122008">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Parameter_x0020_Name" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Value" type="xs:string" minOccurs="0" />
+                  <xs:element name="Parameter_x0020_Type" type="xs:string" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="NewDataSet" msdata:IsDataSet="true" msdata:MainDataTable="QueryParamTable100124.122008" msdata:UseCurrentLocale="true">
+              <xs:complexType>
+                <xs:choice minOccurs="0" maxOccurs="unbounded">
+                  <xs:element ref="QueryParamTable100124.122008" />
+                </xs:choice>
+              </xs:complexType>
+            </xs:element>
+          </xs:schema>
+          <diffgr:diffgram xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:diffgr="urn:schemas-microsoft-com:xml-diffgram-v1">
+            <DocumentElement>
+              <QueryParamTable100124.122008 diffgr:id="QueryParamTable100124.1220081" msdata:rowOrder="0" diffgr:hasChanges="modified">
+                <Parameter_x0020_Name>neo</Parameter_x0020_Name>
+                <Parameter_x0020_Value>1</Parameter_x0020_Value>
+                <Parameter_x0020_Type>STRING</Parameter_x0020_Type>
+              </QueryParamTable100124.122008>
+            </DocumentElement>
+            <diffgr:before>
+              <QueryParamTable100124.122008 diffgr:id="QueryParamTable100124.1220081" msdata:rowOrder="0">
+                <Parameter_x0020_Name>neo</Parameter_x0020_Name>
+                <Parameter_x0020_Value>1</Parameter_x0020_Value>
+                <Parameter_x0020_Type>STRING</Parameter_x0020_Type>
+              </QueryParamTable100124.122008>
+            </diffgr:before>
+          </diffgr:diffgram>
+        </v_QueryParameters>
+      </ScriptCommand>
+    </ScriptAction>
+    <ScriptAction>
+      <ScriptCommand xsi:type="ShowMessageCommand" CommandID="e3d60e9b-3700-47a4-aa40-e15e0d01317e" CommandName="ShowMessageCommand" IsCommented="false" SelectionName="Show Message" DefaultPause="0" LineNumber="3" PauseBeforeExeucution="false" CommandEnabled="true" v_Message="⦃vdata⦄" v_AutoCloseAfter="0" />
+    </ScriptAction>
+  </Commands>
+  <Info>
+    <TasktVersion>3.5.1.68</TasktVersion>
+    <Author />
+    <LastRunTime>2024-10-01T12:28:25.1920701+00:00</LastRunTime>
+    <RunTimes>7</RunTimes>
+    <ScriptVersion>0.0.0</ScriptVersion>
+    <Description />
+  </Info>
+  <Variables />
+</Script>
